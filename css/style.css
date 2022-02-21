@@ -9,31 +9,40 @@
 }
 body {
   color: var(--primary-text-color);
-  background-color: var(--main-background-color, white);
-  font-family: Roboto sans-serif;
+  background-color: var(--main-background-color);
+  font-family: Roboto, sans-serif;
 }
 /* скриваєм крапки, підкреслення */
 .list {
   list-style: none;
   text-decoration: none;
 }
-/* скрийтий заголовок */
+/* скритий заголовок */
 .hide {
   display: none;
 }
 /* logo */
-.logo-black {
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.11px;
+  letter-spacing: 0.03em;
+}
+.logo .black {
   color: var(--primary-text-color);
 }
-.logo-accent {
-  color: var(--accent-color);
-}
-.logo-white {
+.logo .whit {
   color: var(--third-text-color);
 }
 /* навігація сайту */
 .site-nav .link {
   color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.02em;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -52,16 +61,26 @@ body {
   background-color: var(--third-background-color);
   color: var(--third-text-color);
 }
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36px;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
 /* кнопки */
 .button {
+  font-family: inherit;
   color: var(--third-text-color);
   background-color: var(--accent-color);
   cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.86px;
 }
-.button-filter {
+.button:hover {
   color: var(--primary-text-color);
-  background-color: var(--accent-color);
-  cursor: pointer;
+  background-color: var(--second-background-color);
 }
 /* секція переваги advantages */
 .section-title {
@@ -70,6 +89,10 @@ body {
 /* заголовки */
 .adv-title {
   color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
 }
 /* параграфи */
 .adv-paragraph {
@@ -88,7 +111,6 @@ body {
 /* футер */
 .footer {
   background-color: var(--third-background-color);
-  color: var(--third-text-color);
 }
 /* лого футер */
 .logo-foot {
@@ -103,3 +125,15 @@ body {
   color: var(--accent-color);
 }
 /* портфолио */
+/* Кнопки фільтр */
+.button-radio {
+  font-family: inherit;
+  color: var(--primary-text-color);
+  background-color: var(--second-background-color);
+  cursor: pointer;
+}
+.button-radio:hover {
+  color: var(--third-text-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
