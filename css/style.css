@@ -92,7 +92,6 @@ body {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 .adv-title {
   color: var(--primary-text-color);
@@ -100,6 +99,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 /* параграфи */
 .adv-paragraph {
