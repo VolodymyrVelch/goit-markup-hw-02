@@ -17,15 +17,11 @@ body {
   list-style: none;
   text-decoration: none;
 }
-/* скритий заголовок */
-.hide {
-  display: none;
-}
 /* logo */
 .logo {
   color: var(--accent-color);
   font-family: Raleway;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.11;
   letter-spacing: 0.03em;
@@ -33,31 +29,33 @@ body {
 .logo .black {
   color: var(--primary-text-color);
 }
-.logo .whit {
+.logo .white {
   color: var(--third-text-color);
 }
 /* навігація сайту */
-.site-nav .link {
+.nav-link {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--accent-color);
 }
 /* активна сторінка */
-.activ-page.active {
+.activ-page {
   color: var(--accent-color);
 }
 /* контакти */
-.contact .link {
+.contact-link {
   color: var(--second-text-color);
+  font-weight: 500;
+  font-style: normal;
 }
-.contact .link:hover,
-.contact .link:focus {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--accent-color);
 }
 /* Герой */
@@ -82,7 +80,8 @@ body {
   font-size: 16px;
   line-height: 1.86;
 }
-.button:hover {
+.button:hover,
+.button:focus {
   color: var(--primary-text-color);
   background-color: var(--second-background-color);
 }
@@ -93,6 +92,7 @@ body {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .adv-title {
   color: var(--primary-text-color);
@@ -136,10 +136,15 @@ body {
 /* локація */
 .adress {
   color: var(--third-text-color);
+  font-style: normal;
 }
 .adress:hover,
 .adress:link {
   color: var(--accent-color);
+}
+/* контакти футер */
+.contact-link {
+  color: var(--second-text-color);
 }
 /* портфолио */
 /* Кнопки фільтр */
@@ -154,13 +159,14 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.button-radio:hover {
+.button-radio:hover,
+.button-radio:focus {
   color: var(--third-text-color);
   background-color: var(--accent-color);
   cursor: pointer;
 }
 /* приклади робіт */
-.exampl-title {
+.example-title {
   color: var(--primary-text-color);
   font-weight: bold;
   font-size: 18px;
